@@ -1,0 +1,60 @@
+<html>
+
+<head></head>
+
+<body>
+    
+    <h1>job application form</h1>
+    <form action="./main.js" id="myForm" onsubmit="validation()" >
+        <h3>personal information</h3>
+        First name : * <input type="text" id="fname" name="fname" placeholder="first name" required=""
+            oninvalid="this.setCustomValidity('Please Enter first name')" oninput="setCustomValidity('')">
+
+        Middle name:<input type="text" id="fname" name="fname" placeholder="first name">
+        Last name:* <input type="text" id="fname" name="lname" placeholder="Last name" required=""
+            oninvalid="this.setCustomValidity('Please Enter Last  name')" oninput="setCustomValidity('')">
+
+        <br><br>
+        <label for="Age"> Age:* <input type="number" min="12" max="100" required=""
+                oninvalid="this.setCustomValidity('Please Enter your Age')" oninput="setCustomValidity('')"></label>
+        <br><br>
+
+        <div>
+            <label for="Gender"> Gender:* <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </label>
+        </div>
+        <br><br>
+
+        <label for=""> Qualification :*<select required>
+
+                <option selected disabled value="">choose</option>
+                <option>BTECH</option>
+                <option>BSC</option>
+                <option>MTECH</option>
+                <option>BCA</option>
+                <option>MCA</option>
+                <option>Others</option>
+            </select> </label>
+        <br><br>
+
+        <label for="About yourself">About yourself *  <br><textarea rows="8" cols="80" maxlength="250" required="" oninvalid="this.setCustomValidity('Please Enter About yourself')"
+             placeholder="Enter text here not more than 250..."></textarea></label>
+        <br><br>
+
+        <label for="upload CV">Upload CV : *<input type="file" name="cv" required="" oninvalid="this.setCustomValidity('Please upload your CV')"></label>
+        <br><br>
+
+        <input type="submit"  >
+    </form>
+
+    <script>
+    </script>
+</body>
+
+
+</html>
